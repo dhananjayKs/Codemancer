@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./input.css" rel='stylesheet'>
+    <link href="./posts.css" rel='stylesheet'>
+    <script src="./index.js" type="module" defer></script>
+    <script src='./posts.js' type="module" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        
+        
+        <textarea class="input" id="text" maxlength="100" placeholder="Post Something!!!!"></textarea>
+        
+        <div class="gif" id="selected-gif">
+        </div>
+        <div class="btn-container">
+            <p class="button" id="add-gif">Add Gif</p>
+            <p class="button" id="post">Post</p>
+        </div>
+        <div id='gif-search' class="gif-search display-none" >
+            <div>
+                <input type="text" placeholder="Search Gif" id="search">
+                <p id="search-btn">Search</p>
+            </div>
+            
+            <div class="gif-Display" id="gif-Display">
+
+            </div>
+        </div>
+        
+    </div>
+    <div class="entries" id="entries">
+
+    </div>
+</body>
+</html>

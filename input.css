@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: c;
+}
+body{
+    background-color: aliceblue;
+}
+.container{
+    width: 500px;
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin: auto;
+    border: 1px blue solid;
+    background-color: white;
+    padding: 0.5rem;
+    z-index: 5;
+}
+
+/*.profile-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: 0.25rem;
+}
+.icon-container{
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    
+} */
+.gif{
+    width: 100%;    
+    
+
+}
+.gif > img{
+    margin: auto;
+    width: 200px;
+}
+.gif-container{
+    width: 240px;
+    height: 240px;;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.gif-container:hover{
+    outline: 1px slateblue solid;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition:  background-color 0.5s, outline 0.5s;
+}
+.gif-container > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.del-gif{
+    position: absolute;
+    top: 0%;
+    right:2%;
+    
+    font-size: 1rem;
+    color: white;
+    border: white 1px solid;
+    line-height: 1rem;
+    width: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 3;
+    
+}
+.del-gif:hover{
+    display: block;
+}
+.input{
+    display: inline-block;
+    height:3rem;
+    width: 100%;
+    border: none;
+    resize: none;
+    text-indent: 4rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    transition: font-size 0.5s, height 0.5s;
+}
+.input:focus{
+    height:9rem;
+    outline: none;
+    font-size: 2rem;
+    line-height: 2rem;
+    transition: font-size 0.5s, height 0.5s,line-height 0.5s;
+    
+}
+.button{
+    display: inline-block;
+    height: 2rem;
+    width: 49%;
+    line-height: 2rem;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin: 1rem auto;
+}
+.btn-container{
+    width: 100%;
+}
+.gif-search{
+    width: 15rem;
+    position:absolute;
+    left: 35%;
+    background-color: aliceblue;
+    max-height: 20rem;
+    border: slateblue 1px solid;
+    border-radius: 4px;
+    transform: translate(-50%);
+    overflow: auto;
+    
+}
+.gif-search  input{
+    height: 1.5rem;
+    width: 9rem;
+    margin: 0.5rem;
+    display: inline-block;
+}
+.gif-search  p{
+    display: inline-block;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    width: 4rem;
+    border: slateblue 1px solid;
+    border-radius: 4px;
+    background-color: white;
+    text-align: center;
+}
+.gif-search::-webkit-scrollbar {
+    display: none;
+  }
+
+.gif-display{
+    
+    height: auto;
+    overflow: scroll;
+   
+    
+    align-items: center;
+    
+}
+.gif-display>img{
+    width: 200px;
+
+}
+.display-none{
+    display: none;
+    transition: display 0.5s;
+    scroll-behavior: smooth;
+}
